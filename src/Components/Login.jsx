@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import attendanceImage from './assets/attendanceImage.jpeg'
+import attendanceImage from './assets/attendance.png'
 import { Box } from "@mui/system";
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
@@ -80,7 +80,7 @@ function Login() {
   }
   return (
     <>
-    <Box sx={{backgroundColor:'grey',minHeight:'860px',background:'linear-gradient(to bottom right, #44D24A,#033359)'}}>
+    <Box sx={{backgroundColor:'grey',minHeight:'860px',background:'pink'}}>
       <Box sx={{mb:5,py:6}}>
         <Typography sx={{color:'white',textAlign:'center',fontWeight:'700',fontSize:26,fontFamily:'Montserrat'}}>Attendance Portal</Typography>
       </Box>
