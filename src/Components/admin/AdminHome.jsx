@@ -7,7 +7,7 @@ function AdminHome() {
   const [staffData, setStaffData] = useState([]);
   useEffect(() => {
     const loadData = async () => {
-      let response = await axios.get("https://attendance-portal-backend.herokuapp.com/countstaff");
+      let response = await axios.get("https://protected-atoll-20475.herokuapp.com/countstaff");
       setStaffData(response.data);
     };
     loadData();
@@ -16,7 +16,7 @@ function AdminHome() {
   const [studData, setStudData] = useState([]);
   useEffect(() => {
     const loadData = async () => {
-      let response = await axios.get("https://attendance-portal-backend.herokuapp.com/countstudent");
+      let response = await axios.get("https://protected-atoll-20475.herokuapp.com/countstudent");
       setStudData(response.data);
     };
     loadData();
