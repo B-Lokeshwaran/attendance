@@ -89,7 +89,7 @@ export default function CustomPaginationActionsTable() {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     const loadData = async () => {
-      const response = await axios.get("https://attendance-portal-backend.herokuapp.com/viewstudent");
+      const response = await axios.get("https://protected-atoll-20475.herokuapp.com/viewstudent");
       setData(response.data);
     };
     loadData();
@@ -115,7 +115,7 @@ export default function CustomPaginationActionsTable() {
       setValue({...value,[e.target.name]:e.target.value})
   }
   const handleSubmit = async()=>{
-    await axios.post('https://attendance-portal-backend.herokuapp.com/markattendance',value)
+    await axios.post('https://protected-atoll-20475.herokuapp.com/markattendance',value)
     setValue({})
     toast.success("Attendance Marked")
   }
