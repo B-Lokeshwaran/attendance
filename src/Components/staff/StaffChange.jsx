@@ -19,7 +19,7 @@ function StaffChange() {
   //onclick
   const handleSubmit = async ()=>{
     try{
-      await axios.put('https://attendance-portal-backend.herokuapp.com/staffchangepsw',{
+      await axios.put('https://protected-atoll-20475.herokuapp.com/staffchangepsw',{
       old:state.old,new:state.new,staffid:decodedToken.staffid
     })
     setState({old:'',new:''})
