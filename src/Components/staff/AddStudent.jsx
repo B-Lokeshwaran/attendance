@@ -25,7 +25,7 @@ function AddNewStaff() {
   const handleSubmit = async(e)=>{  
     e.preventDefault()
    try{
-    await axios.post('https://attendance-portal-backend.herokuapp.com/addstudent',{
+    await axios.post('https://protected-atoll-20475.herokuapp.com/addstudent',{
       regno:studDetail.regNo,
     studentname:studDetail.studentName,
     studentage:studDetail.studentAge,
