@@ -99,6 +99,7 @@ function AddNewStaff() {
                 <option value="MECH">MECH</option>
                 <option value="EEE">EEE</option>
                 <option value="BIO-TECH">BIO-TECH</option>
+                <option value="AGRI">AGRICULTURE</option>
               </select>
             </td>
           </tr>
